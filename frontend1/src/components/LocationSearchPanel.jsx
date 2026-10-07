@@ -4,13 +4,18 @@ const LocationSearchPanel = ({ suggestions, setVehiclePanel, setPanelOpen, setPi
 
     const handleSuggestionClick = (suggestion) => {
         if (activeField === 'pickup') {
-            setPickup(suggestion)
+            setPickup(suggestion.display_name)
+            // setPickup(suggestion)
+
         } else if (activeField === 'destination') {
-            setDestination(suggestion)
+            setDestination(suggestion.display_name)
+            // setDestination(suggestion)
+
         }
         // setVehiclePanel(true)
         // setPanelOpen(false)
     }
+    // console.log(suggestions)
 
     return (
         <div>

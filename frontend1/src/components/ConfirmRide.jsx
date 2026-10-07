@@ -1,6 +1,7 @@
 import React from 'react'
 
 const ConfirmRide = (props) => {
+    console.log(props)
     return (
         <div>
             <h5 className='p-1 text-center w-[93%] absolute top-0' onClick={() => {
@@ -9,7 +10,29 @@ const ConfirmRide = (props) => {
             <h3 className='text-2xl font-semibold mb-5'>Confirm your Ride</h3>
 
             <div className='flex gap-2 justify-between flex-col items-center'>
-                <img className='h-20' src="https://swyft.pl/wp-content/uploads/2023/05/how-many-people-can-a-uberx-take.jpg" alt="" />
+                 {/* {props.vehicleType == 'moto'?<img className='h-20' src="https://img.autocarpro.in/autocarpro/4d3ef0c9-c75e-46a3-af25-fab216e0bfe8_Untitled.jpg?w=750&h=490&q=75&c=1" alt="" />:<img  img className='h-20' src='https://swyft.pl/wp-content/uploads/2023/05/how-many-people-can-a-uberx-take.jpg'/>} */}
+                   {/* <h1>Your Vehicle{props.vehicleType}</h1> */}
+                   
+  {/* {props.vehicleType == 'moto' ? (
+    <img
+      className='h-20'
+      src='https://img.autocarpro.in/autocarpro/4d3ef0c9-c75e-46a3-af25-fab216e0bfe8_Untitled.jpg?w=750&h=490&q=75&c=1'
+      alt='moto'
+    />
+  ) : props.vehicleType == 'car' ? (
+    <img
+      className='h-20'
+      src='https://swyft.pl/wp-content/uploads/2023/05/how-many-people-can-a-uberx-take.jpg'
+      alt='bike'
+    />
+  ) : (
+    <img
+      className='h-20'
+      src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZQTuozHgbc5kbm3U2mpTrNoHy-BdgBtKX1GfrNCH3hg&s'
+      alt='cycle'
+    />
+  )
+} */}
                 <div className='w-full mt-5'>
                     <div className='flex items-center gap-5 p-3 border-b-2'>
                         <i className="ri-map-pin-user-fill"></i>

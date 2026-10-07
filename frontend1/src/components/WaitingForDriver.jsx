@@ -37,7 +37,7 @@ const WaitingForDriver = (props) => {
             <i className="ri-currency-line"></i>
             <div>
               <h3 className='text-lg font-medium'>₹{props.ride?.fare} </h3>
-              <p className='text-sm -mt-1 text-gray-600'>Cash Cash</p>
+              <p className='text-sm -mt-1 text-gray-600'>Cash Cash hai kya </p>
             </div>
           </div>
         </div>
