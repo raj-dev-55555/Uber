@@ -29,6 +29,7 @@ module.exports.registerUser = async (req, res, next) => {
     });
 
     const token = user.generateAuthToken();
+    console.log("ho gya ragister")
 
     res.status(201).json({ token, user });
 

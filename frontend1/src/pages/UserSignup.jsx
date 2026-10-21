@@ -101,7 +101,7 @@ function UserSignup() {
                 setPassword(e.target.value)
               }}
               required type="password"
-              placeholder='password'
+           
             />
 
             <button

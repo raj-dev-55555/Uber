@@ -63,7 +63,7 @@ const UserProtected = ({
 
     if (isLoading) {
         return (
-            <div>Loading...</div>
+            <div>Loading....</div>
         )
     }
 

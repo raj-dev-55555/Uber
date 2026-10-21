@@ -53,6 +53,8 @@ const Home = () => {
     useEffect(() => {
         socket.emit("join", { userType: "user", userId: user._id })
     }, [ user ])
+
+    
   socket.on('ride-confirmed', ride => {
 
 
@@ -218,13 +220,15 @@ const Home = () => {
     }
 
     return (
+        
          <div className='h-screen relative overflow-hidden'>
-            <img className='w-16 absolute left-5 top-5' src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Uber_logo_2018.png" alt="" />
+            {/* <img className='w-16 absolute left-5 top-5' src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Uber_logo_2018.png" alt="" /> */}
             <div className='h-screen w-screen relative z-0'>
                 
                 <LiveTracking />
               
         <div className='absolute inset-0 bg-white/10 pointer-events-none'></div>
+
 
             </div>
             <div className=' flex flex-col justify-end h-screen absolute top-0 w-full z-10'>
@@ -261,7 +265,7 @@ const Home = () => {
                             value={destination}
                             onChange={(e)=>{
                                     setDestination(e.target.value)
-    handleDestinationChange(e)
+                                    handleDestinationChange(e)
 
                             }}
                             className='bg-[#eee] px-12 py-2 text-lg rounded-lg w-full  mt-3'
