@@ -83,6 +83,8 @@ function UserLogin() {
           className='bg-[#10b461] flex items-center justify-center text-white font-semibold mb-5 rounded-lg px-4 py-2 w-full text-lg placeholder:text-base'
         >Sign in as Captain</Link>
       </div>
+      <h1>Please open the console before doing anything, because error handling is not complete yet. If an error occurs, please refresh the app and explore again.</h1>
+
     </div>
      
     
