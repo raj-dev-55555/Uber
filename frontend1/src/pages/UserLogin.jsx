@@ -30,7 +30,7 @@ function UserLogin() {
     console.log("TOKEN:", data.token)
       setUser (data.user)
         localStorage.setItem('token', data.token)
-      navigate('/home')
+      navigate('/Home')
     }
 
   }

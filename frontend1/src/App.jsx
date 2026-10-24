@@ -23,7 +23,7 @@ function App(){
         <Route path="/UserLogin" element={<UserLogin></UserLogin>}></Route>
         <Route path="/UserSignup" element={<UserSignup></UserSignup>}></Route>
         <Route path="/CaptainLogin" element={<CaptainLogin></CaptainLogin>}></Route>
-        <Route path="/CaptainSignup" element={<CaptainSignup></CaptainSignup>}></Route>
+        <Route path="/Captainsignup" element={<CaptainSignup></CaptainSignup>}></Route>
         <Route path="/Home" element={<UserProtected><Home></Home></UserProtected>}></Route>
         <Route path="/riding" element={<Riding></Riding>}></Route>
         <Route path="/captainRiding" element={<CaptainRiding></CaptainRiding>}></Route>

@@ -41,7 +41,7 @@ const UserProtected = ({
 
     useEffect(() => {
         if (!token) {
-            navigate('/login')
+            navigate('/UserLogin')
         }
 
         axios.get(`${import.meta.env.VITE_BASE_URL}/users/profile`, {
@@ -57,7 +57,7 @@ const UserProtected = ({
             .catch(err => {
                 console.log(err)
                 localStorage.removeItem('token')
-                navigate('/login')
+                navigate('/UserLogin')
             })
     }, [ token ])
 
